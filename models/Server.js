@@ -24,9 +24,9 @@ class Server {
         this.app.use( express.json() )
     }
     routes(){
-        this.app.use('/', require('../routes/main'))
-        this.app.use('/session', require('../routes/session'))
-        this.app.use('/reaction', require('../routes/reaction'))
+        this.app.use('/api', require('../routes/main'))
+        this.app.use('/api/session', require('../routes/session'))
+        this.app.use('/api/reaction', require('../routes/reaction'))
     }
     listen(){
         this.app.listen(this.port, ()=>{
