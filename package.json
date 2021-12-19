@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js"
   },
-  "author": "",
+  "author": "Alejandro Cuartas <cuartasmarin734@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
