@@ -2,6 +2,7 @@ const { response, request } = require('express')
 
 const Session = require('../models/Session')
 
+//save a session's new comment
 const commentPost = async(req = request, res = response) => {
     const { comment, nick } = req.body
     const { id } = req.params
@@ -17,6 +18,7 @@ const commentPost = async(req = request, res = response) => {
     }
 }
 
+//get a session's comments
 const commentGet = async(req = request, res = response) => {
     try {
         const { id } = req.params

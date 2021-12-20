@@ -3,7 +3,7 @@ const { request, response } = require('express')
 const Session = require('../models/Session')
 
 const reactionManager = require('../helpers/reactionManager')
-
+//get the reactions of each session
 const reactionGet = async(req = require, res = response) => {
     try {
         const { id } = req.params
@@ -16,11 +16,11 @@ const reactionGet = async(req = require, res = response) => {
         throw new Error('Could not get reactions')
     }
 }
-
+//posts new reactions
 const reactionPost = async(req = require, res = response) => {
     await reactionManager(req, res, 'do')
 }
-
+//delete reactions
 const reactionDelete = async(req = require, res = response) => {
     await reactionManager(req, res, 'undo')
 }

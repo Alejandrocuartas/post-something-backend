@@ -2,6 +2,7 @@ const { request, response } = require('express')
 
 const Session = require('../models/Session')
 
+//returns all sessions
 const getCtrl = async(req = request, res = response) => {
     const sessions = await Session.find() 
     res.json({
@@ -9,6 +10,7 @@ const getCtrl = async(req = request, res = response) => {
     })
 }
 
+//save a new session 
 const postCtrl = async(req = request, res = response) => {
     try {
         const { content, nickname } = req.body

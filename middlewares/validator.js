@@ -1,5 +1,5 @@
 const { validationResult } = require('express-validator')
-
+//validates the errors that the middleware 'check()' reports
 const validator = (req, res, next) => {
 
     const errors = validationResult(req)
