@@ -1,4 +1,4 @@
 # post-something-backend
 MERN stack app
 deploy:
-https://alejandrocuartas.github.io/post-something-frontend/
+https://post-something-ale31jo.netlify.app/
